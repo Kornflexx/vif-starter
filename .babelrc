@@ -15,6 +15,22 @@
             {
                 "pragma": "Vif.createElement"
             }
+        ],
+        [
+            "prismjs",
+            {
+                "languages": [
+                    "javascript",
+                    "css",
+                    "markup",
+                    "jsx"
+                ],
+                "plugins": [
+                    "line-numbers"
+                ],
+                "theme": "tomorrow",
+                "css": true
+            }
         ]
     ]
 }

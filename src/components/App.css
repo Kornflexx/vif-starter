@@ -1,8 +1,24 @@
+@font-face {
+  font-family: "Monaco";
+  src: url("/monaco.ttf") format("truetype");
+}
 
 body {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
+}
+
+.router-container {
+  display: flex;
+}
+
+.route-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 1rem;
 }
 
 .app {
@@ -19,6 +35,14 @@ body {
   padding: 2rem;
 }
 
+.code-container {
+  background-color: #1d1f21;
+  padding: 1rem;
+  color: #C8C8C8;
+  font-family: Monaco;
+  font-size: 14px;
+}
+
 .app-header > img {
   height: 6rem;
   width: auto;
@@ -31,8 +55,11 @@ body {
 
 .app-instructions {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding: 2rem;
+  user-select: none;
 }
 
 @keyframes bounce {
